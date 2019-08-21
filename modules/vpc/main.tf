@@ -8,3 +8,5 @@ resource "aws_internet_gateway" "default" {
   vpc_id = "${aws_vpc.default.id}"
   tags   = "${merge(map("Name", "${var.name}-${var.env}-ig"), var.tags)}"
 }
+
+#TESTING
